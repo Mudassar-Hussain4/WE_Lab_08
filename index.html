@@ -1,93 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JS Mastery Calculator</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Product Gallery</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ===== HEADER ===== -->
-  <header>
-    <h1>🧮 JS Mastery Calculator</h1>
-    <p id="clock">Loading clock…</p>
+  <header class="header">
+    <h1>ShopEase</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Cart</a>
+    </nav>
   </header>
 
-  <!-- ===== MAIN GRID ===== -->
-  <main class="dashboard">
+  <main class="gallery">
 
-    <!-- ---- Calculator Panel ---- -->
-    <section class="panel calculator">
-      <h2>Calculator</h2>
+    <article class="card">
+      <img src="img_01.jpg" alt="Wireless Headphones" class="card-img">
+      <h2 class="card-title">Wireless Headphones</h2>
+      <p class="card-price">$59.99</p>
+      <button class="card-btn">Add to Cart</button>
+    </article>
 
-      <!-- Display -->
-      <input type="text" id="display" placeholder="0" readonly />
+    <article class="card">
+      <img src="img_02.jpg" alt="Mechanical Keyboard" class="card-img">
+      <h2 class="card-title">Mechanical Keyboard</h2>
+      <p class="card-price">$89.99</p>
+      <button class="card-btn">Add to Cart</button>
+    </article>
 
-      <!-- Keyboard / Button Grid -->
-      <div class="keys">
-        <button data-key="7">7</button>
-        <button data-key="8">8</button>
-        <button data-key="9">9</button>
-        <button data-key="/">÷</button>
+    <article class="card">
+      <img src="img_03.jpg" alt="Smartphone Stand" class="card-img">
+      <h2 class="card-title">Smartphone Stand</h2>
+      <p class="card-price">$19.99</p>
+      <button class="card-btn">Add to Cart</button>
+    </article>
 
-        <button data-key="4">4</button>
-        <button data-key="5">5</button>
-        <button data-key="6">6</button>
-        <button data-key="*">×</button>
+    <article class="card">
+      <img src="img_04.jpg" alt="4K Monitor" class="card-img">
+      <h2 class="card-title">4K Monitor</h2>
+      <p class="card-price">$299.99</p>
+      <button class="card-btn">Add to Cart</button>
+    </article>
 
-        <button data-key="1">1</button>
-        <button data-key="2">2</button>
-        <button data-key="3">3</button>
-        <button data-key="-">−</button>
+    <article class="card">
+      <img src="img_05.jpg" alt="Bluetooth Speaker" class="card-img">
+      <h2 class="card-title">Bluetooth Speaker</h2>
+      <p class="card-price">$39.99</p>
+      <button class="card-btn">Add to Cart</button>
+    </article>
 
-        <button data-key="0">0</button>
-        <button data-key=".">.</button>
-        <button id="equals">=</button>
-        <button data-key="+">+</button>
-
-        <button id="clear" class="span-2">C</button>
-        <button id="sqrt">√</button>
-        <button id="random" title="Random number">🎲</button>
-      </div>
-
-      <!-- Regex validation feedback -->
-      <p id="validationMsg" class="msg"></p>
-    </section>
-
-    <!-- ---- History Panel ---- -->
-    <section class="panel history">
-      <h2>History</h2>
-      <ul id="historyList"></ul>
-      <button id="clearHistory">Clear History</button>
-      <button id="sortHistory">Sort (A→Z)</button>
-    </section>
-
-    <!-- ---- Info / Extra Features Panel ---- -->
-    <section class="panel info">
-      <h2>Live Info</h2>
-      <p>Click coordinates: <span id="coords">—</span></p>
-      <p>Last key code: <span id="keyCode">—</span></p>
-      <p>Last event type: <span id="eventType">—</span></p>
-      <p>Result in binary: <span id="binary">—</span></p>
-      <p>Min/Max of last 5 results: <span id="minmax">—</span></p>
-      <hr />
-      <h3>Form Validation Demo</h3>
-      <form id="demoForm">
-        <label>Email (regex): <input type="text" id="email" /></label>
-        <p id="emailMsg" class="msg"></p>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+    <article class="card">
+      <img src="img_06.jpg" alt="USB-C Hub" class="card-img">
+      <h2 class="card-title">USB-C Hub</h2>
+      <p class="card-price">$24.99</p>
+      <button class="card-btn">Add to Cart</button>
+    </article>
 
   </main>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <p>Browser: <span id="browser">unknown</span> | Theme: <span id="themeLabel">light</span></p>
-    <button id="themeToggle">Toggle Theme</button>
+  <footer class="footer">
+    <p>&copy; 2026 ShopEase. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
